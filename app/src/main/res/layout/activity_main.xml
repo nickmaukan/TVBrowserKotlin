@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- URL Input Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="32dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search" />
+
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:hint="Enter URL or search..."
+            android:textColorHint="@color/on_surface_variant"
+            android:textColor="@color/on_surface"
+            android:textSize="20sp"
+            android:imeOptions="actionSearch"
+            android:inputType="textUri"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/btn_go"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_forward"
+            android:contentDescription="Go" />
+    </LinearLayout>
+
+    <!-- Browse Frame -->
+    <androidx.leanback.widget.BrowseFrameLayout
+        android:id="@+id/browse_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</FrameLayout>

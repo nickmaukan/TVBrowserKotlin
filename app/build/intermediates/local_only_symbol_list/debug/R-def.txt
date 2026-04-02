@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color background
+color on_primary
+color on_surface
+color on_surface_variant
+color primary
+color primary_variant
+color secondary
+color surface
+drawable banner
+drawable ic_arrow_back
+drawable ic_arrow_forward
+drawable ic_launcher
+drawable ic_refresh
+drawable ic_search
+id browse_frame
+id btn_go
+id loading_indicator
+id player_view
+id url_input
+layout activity_main
+layout activity_video_player
+style Theme.TVBrowser
+style Theme.TVBrowser.Fullscreen
